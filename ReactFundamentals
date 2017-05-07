@@ -1,1 +1,31 @@
 -> html part of js = jsx (syntax extension) needs to be comiled
+-> JSX element treated like js expression, can be saved in variable etc
+-> JSX element can have attributes like regular html element
+-> jsx elemnts can bes nested - mlti line in brackets !!
+-> jsx element: needs one outermost element -> ez: wrap a div around it!
+-> render = make it appear on screen
+-> ReactDOM.render(element, where)
+-> ReactDOM.render only renders changing elements. render twice in a row: second render does nothing
+-> big React advantage: sets up virtual dom and changes it -> only changes the real doms elemnts, that got changed in the virtual dom update (dom is slow, updating virtual dom is fast)
+-> IN JSX class = className!!!
+-> self closing tag? slash has to be put before ending bracket
+
+-> {} for javascript operations inside of jsx expression
+-> access js variables inside jsx expressions via {}
+-> also works for html attributes inside jsx
+-> jsx = working with event listeners a lot
+-> in jsx onClick instead of onclick
+-> no ifs in jsx {}
+-> ternary operator shows up often
+-> && shows up often
+-> map is important! (var people = ['Rowe', 'Prevost', 'Gare'];
+
+                      var peopleLIs = people.map(function(person){
+                        // return statement goes here:
+	                      return <li>{person} </li>
+                      });
+
+                      // ReactDOM.render goes here:
+                       ReactDOM.render(<ul>{peopleLIs}</ul>, document.getElementById('app'))
+                       )
+-> key is an jsx attribute -> shuffling or memory in lists
